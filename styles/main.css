@@ -13,6 +13,21 @@ body {
 }
 
 /*      menu        */
+.burger-menu,
+.burger-close{
+    display: none;
+    float: right;
+    height: 35px;
+    width: 35px;
+}
+.burger-menu{
+    background: url("../images/icons/menu.png")  no-repeat right top;
+    background-size: cover;
+}
+.burger-close{
+    background: url("../images/icons/cancel.png")  no-repeat right top;
+    background-size: cover;
+}
 .menu {
     display: inline-block;
     float: right;
@@ -29,7 +44,6 @@ body {
     float: left;
     font-weight: 500;
 }
-
 .menu__link {
     font-size: 16px;
     display: block;
@@ -38,6 +52,7 @@ body {
     color: #000;
 }
 .menu__link:hover {
+    font-size: .98rem;
     background: #ff4053;
     border-radius: 30px;
     color: #fff;
@@ -58,6 +73,13 @@ body {
 @media screen and (max-width: 768px){
     .menu{
         display: none;
+    }
+    .menu__item{
+        display: initial;
+        float: none;
+    }
+    .burger-menu {
+        display: inline-block;
     }
 }
 
