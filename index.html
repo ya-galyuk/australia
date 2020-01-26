@@ -20,7 +20,8 @@
     <a href="" class="header__logo logo">
         <img src="images/logo.png" alt="logo.png" class="logo__img">
     </a>
-
+    <span class="header__burger-menu burger-menu"></span>
+    <span class="header__burger-close burger-close"></span>
     <nav class="header__menu menu">
         <ul class="menu__list">
             <li class="menu__item"><a href="" class="menu__link">Home</a></li>
@@ -39,7 +40,7 @@
 
         <a href="" class="cover-section__btn">More detail</a>
 
-        <div class="cover-section__bg-img">
+        <div class="cover-section__box-img">
             <img src="images/cover-bg.png" alt="" class="cover-section__img">
         </div>
     </section>
@@ -65,7 +66,7 @@
                     <img src="images/home-insurance.png" alt="" class="offer__img">
                 </div>
 
-                <h2 class="offer__subtitle">House Insurance</h2>
+                <h2 class="offer__subtitle">Health Insurance</h2>
                 <p class="offer__description">Praesent nec bibendum ligula. Quisque sollicitudin et tellus ullamcorper viverra. Cras consectetur nibh et elit porttitor, quis lacinia turpis interdum.</p>
 
                 <div class="offer__arrow">
@@ -86,9 +87,9 @@
             </li>
         </ul>
     </section>
-    <div class="wrapper-about">
-        <div class="wrapper-about__div-img"></div>
-        <section class="wrapper-about__section about-section">
+    <section class="about-section">
+        <div class="about-section__img"></div>
+        <div class="wrapper-about">
             <h1 class="aboutUs-section__title">About us</h1>
             <h2 class="aboutUs-section__subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h2>
             <p class="aboutUs-section__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nec
@@ -99,26 +100,29 @@
 
             <ul class="aboutUs-section__list about-list about">
                 <li class="about__item">
-                    <div class="about__img-div" style="background: url(images/about-icon.png) center no-repeat;"></div>
+                    <div class="about__icon" style="background: url(images/about-icon.png) center no-repeat;"></div>
                 </li>
                 <li class="about__item">
-                    <div class="about__img-div" style="background: url(images/about-icon2.png) center no-repeat;"></div>
+                    <div class="about__icon" style="background: url(images/about-icon2.png) center no-repeat;"></div>
                 </li>
                 <li class="about__item">
-                    <div class="about__img-div" style="background: url(images/about-icon.png) center no-repeat;"></div>
+                    <div class="about__icon" style="background: url(images/about-icon.png) center no-repeat;"></div>
                 </li>
                 <li class="about__item">
-                    <div class="about__img-div" style="background: url(images/about-icon.png) center no-repeat;"></div>
+                    <div class="about__icon" style="background: url(images/about-icon.png) center no-repeat;"></div>
                 </li>
             </ul>
-        </section>
-    </div>
+        </div>
+
+    </section>
     <section class="team-section">
         <h1 class="team-section__title">Team Member</h1>
         <h2 class="team-section__subtitle">Insurance that cover all your needs</h2>
         <ul class="team-section__list team">
             <li class="team__item">
-                <div class="team__img"></div>
+                <div class="team__img-box">
+                    <img src="images/team1.png" alt="" class="team__img">
+                </div>
                 <div class="team__info">
                     <h1 class="team__title">Bess weaver</h1>
                     <h2 class="team__subtitle">seo expert</h2>
@@ -133,7 +137,9 @@
                 </ul>
             </li>
             <li class="team__item">
-                <div class="team__img"></div>
+                <div class="team__img-box">
+                    <img src="images/team1.png" alt="" class="team__img">
+                </div>
                 <div class="team__info">
                     <h1 class="team__title">Bess weaver</h1>
                     <h2 class="team__subtitle">seo expert</h2>
@@ -148,7 +154,9 @@
                 </ul>
             </li>
             <li class="team__item">
-                <div class="team__img"></div>
+                <div class="team__img-box">
+                    <img src="images/team1.png" alt="" class="team__img">
+                </div>
                 <div class="team__info">
                     <h1 class="team__title">Bess weaver</h1>
                     <h2 class="team__subtitle">seo expert</h2>
@@ -167,7 +175,9 @@
     <section class="recall-section">
         <div class="recall-section__comment comment">
             <div class="comment__font">
-                <div class="comment__img"></div>
+                <div class="comment__img-box">
+                    <img src="images/comment-person.png" alt="" class="comment__img">
+                </div>
                 <div class="comment__info-person info-person">
                     <h1 class="info-person__title">Shirley Smith</h1>
                     <p class="info-person__description">Graphic designer</p>
@@ -177,16 +187,17 @@
                 <div class="comment__quote-down"></div>
             </div>
             <div class="comment__bg"></div>
+            <div class="recall-section__arrow arrow arrow_next"></div>
+            <div class="recall-section__arrow arrow arrow_prev"></div>
         </div>
-        <div class="recall-section__arrow arrow arrow_next"></div>
-        <div class="recall-section__arrow arrow arrow_prev"></div>
-
     </section>
     <section class="blog-section">
         <h1 class="blog-section__title">Our Blog</h1>
         <ul class="blog-section__list blog">
             <li class="blog__item">
-                <div class="blog__img"></div>
+                <div class="blog__img-box">
+                    <img src="images/blog.png" alt="" class="blog__img">
+                </div>
                 <p class="blog__description">How e leaning wins<br>Competition in big world</p>
                 <a href="" class="blog__link">Read More</a>
             </li>
@@ -201,12 +212,18 @@
                 <a href="" class="blog__link">Read More</a>
             </li>
         </ul>
+
+        <div class="blog__range-slider r-slider">
+            <span id="range-start" class="range-start range"></span>
+            <span id="range-between" class="range-between range"></span>
+            <span id="range-end" class="range-end range"></span>
+        </div>
+
         <div class="subscribe">
-            <h1 class="subscribe__title">Subcribe  News Letter</h1>
+            <h1 class="subscribe__title">Subcribe News Letter</h1>
             <a href="" class="subscribe__link">Subcribe Now</a>
         </div>
     </section>
-
 </main>
 <footer class="footer">
 
@@ -266,9 +283,10 @@
     </div>
 
     <hr class="footer__hr">
-    <p class="footer__copyright">&#169; Copyright 2020 by Yaroslav Galyuk</p>
+    <p class="footer__copyright">© Copyright 2020 by Yaroslav Galyuk</p>
 </footer>
 
-
+<script src="scripts/jquery-3.4.1.min.js"></script>
+<script src="scripts/main__jquery.js"></script>
 </body>
 </html>
